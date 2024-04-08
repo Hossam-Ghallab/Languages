@@ -1,0 +1,23 @@
+h2 {
+  background-color: var(--m-t);
+  margin: 30px 0;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+h2::after,
+h2::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--m);
+  top: 0;
+}
+h2::after {
+  left: 0;
+}
+h2::before {
+  right: 0;
+}

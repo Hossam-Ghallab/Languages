@@ -1,0 +1,92 @@
+body {
+  background-image: url("../../src/img/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+  backdrop-filter: brightness(0.5);
+}
+h2 {
+  margin: 0;
+}
+.container {
+  padding: 50px 40px 100px;
+}
+.conversation {
+  margin-top: 50px;
+}
+.r {
+  direction: rtl;
+  font-family: "somar-light";
+  font-size: 26px;
+}
+.msg {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.msg.right {
+  flex-direction: row-reverse;
+}
+.image,
+img {
+  width: 30px;
+  height: 30px;
+}
+.panda,
+.penguin {
+  margin-top: 10px;
+  max-width: 800px;
+  background-color: #333;
+  padding: 20px;
+  font-size: 20px;
+}
+.panda {
+  border-radius: 30px 30px 30px 0;
+  -webkit-border-radius: 30px 30px 30px 0;
+  -moz-border-radius: 30px 30px 30px 0;
+  -ms-border-radius: 30px 30px 30px 0;
+  -o-border-radius: 30px 30px 30px 0;
+}
+.penguin {
+  background-color: rgb(1, 73, 121);
+  border-radius: 30px 30px 0px 30px;
+  -webkit-border-radius: 20px 20px 0px 20px;
+  -moz-border-radius: 20px 20px 0px 20px;
+  -ms-border-radius: 20px 20px 0px 20px;
+  -o-border-radius: 20px 20px 0px 20px;
+}
+
+.hr {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+.panda .hr::after,
+.penguin .hr::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 40px);
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  background-color: #aaa;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.border {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media (max-width: 1400px) {
+  body {
+    background-size: auto 100%;
+  }
+}
