@@ -55,3 +55,11 @@
   filter: brightness(1);
   -webkit-filter: brightness(1);
 }
+@media (max-width: 390px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .image img {
+    width: 80px;
+  }
+}
