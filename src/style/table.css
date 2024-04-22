@@ -40,7 +40,7 @@ td p span{
   background-color: var(--bg-t);
 }
 .title.checkpoint {
-  background-color: #ff414150;
+  background-color: #ffbd4150;
 }
 .tip {
   text-align: center;
@@ -52,7 +52,6 @@ td p span{
 
 /* Nested Table */
 td table {
-  margin-top: 10px; 
   max-width: 800px; 
   background-color: var(--bg); 
   text-align: center; 
